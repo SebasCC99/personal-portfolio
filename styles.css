@@ -65,20 +65,59 @@ h6 {
 
 body {
   color: white;
-  background-color: #111010;
+  background-color: black;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 #container {
   margin: 2rem;
 }
 
-#header {
-  background-color: darksalmon;
-  margin-bottom: 1rem;
+#header-container {
+  text-align: center;
 }
 
-#experience {
-  color: black;
-  background-color: bisque;
-  height: 100px;
+#main-container {
+  height: auto;
+  /* background-color: salmon; */
+  margin: 2rem 0;
+
+  .company-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin: 1rem;
+      text-align: justify;
+      font-size: small;
+      line-height: 1.25rem;
+    }
+
+    img {
+      min-width: 150px;
+      min-height: 150px;
+    }
+  }
+
+  .company-container:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+#footer-container {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: floralwhite;
+
+  img {
+    max-width: 32px;
+  }
 }
