@@ -65,7 +65,15 @@ h6 {
 
 body {
   color: white;
-  background-color: black;
+  /* background-color: #2b2a33; */
+  background-image: linear-gradient(
+    to top,
+    #3c4859,
+    #39404f,
+    #353846,
+    #30313c,
+    #2b2a33
+  );
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -86,7 +94,27 @@ body {
   /* background-color: salmon; */
   margin: 2rem 0;
 
-  .company-container {
+  #about-me {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+    font-size: small;
+    line-height: 1.25rem;
+
+    border-bottom: 1px solid floralwhite;
+
+    img {
+      margin: 0.5rem 0;
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: x-small;
+      color: #a5a4ab;
+    }
+  }
+
+  .company-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +132,7 @@ body {
     }
   }
 
-  .company-container:nth-child(even) {
+  .company-wrapper:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
   }
