@@ -123,19 +123,19 @@ body {
         }
 
         img {
-          margin: 10px;
+          margin: 0 10px 10px 0;
           float: left;
-          max-width: 150px;
-          max-height: 150px;
+          max-width: 125px;
+          max-height: 125px;
         }
       }
 
       .company-wrapper:nth-child(even) {
         img {
-          margin: 10px;
+          margin: 0 0 10px 10px;
           float: right;
-          max-width: 150px;
-          max-height: 150px;
+          max-width: 125px;
+          max-height: 125px;
         }
       }
 
