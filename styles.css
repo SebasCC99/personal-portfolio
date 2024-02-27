@@ -83,69 +83,97 @@ body {
 
 #container {
   margin: 2rem;
-}
 
-#header-container {
-  text-align: center;
-}
-
-#main-container {
-  height: auto;
-  /* background-color: salmon; */
-  margin: 2rem 0;
-
-  #about-me {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    text-align: justify;
-    font-size: small;
-    line-height: 1.25rem;
-
-    border-bottom: 1px solid floralwhite;
-
-    img {
-      margin: 0.5rem 0;
-    }
-
-    figcaption {
-      text-align: center;
-      font-size: x-small;
-      color: #a5a4ab;
-    }
+  #header-container {
+    text-align: center;
   }
 
-  .company-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  #main-container {
+    height: auto;
+    /* background-color: salmon; */
+    margin: 2rem 0;
 
-    p {
-      margin: 1rem;
+    #about-me {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
       text-align: justify;
       font-size: small;
       line-height: 1.25rem;
+
+      border-bottom: 1px solid floralwhite;
+
+      img {
+        margin: 0.5rem 0;
+      }
+
+      figcaption {
+        text-align: center;
+        font-size: x-small;
+        color: #a5a4ab;
+      }
     }
+
+    #experience {
+      .company-wrapper {
+        p {
+          margin: 1rem;
+          text-align: justify;
+          font-size: small;
+          line-height: 1.25rem;
+        }
+
+        img {
+          margin: 10px;
+          float: left;
+          max-width: 150px;
+          max-height: 150px;
+        }
+      }
+
+      .company-wrapper:nth-child(even) {
+        img {
+          margin: 10px;
+          float: right;
+          max-width: 150px;
+          max-height: 150px;
+        }
+      }
+
+      #knowledge-container {
+        margin-top: 1rem;
+      }
+
+      #knowledge-wrapper {
+        padding: 0 1rem;
+
+        margin-top: 1rem;
+        font-size: small;
+
+        column-count: 4;
+        list-style-type: none;
+      }
+    }
+  }
+
+  #footer-container {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: floralwhite;
 
     img {
-      min-width: 150px;
-      min-height: 150px;
+      max-width: 32px;
     }
   }
 
-  .company-wrapper:nth-child(even) {
-    display: flex;
-    flex-direction: row-reverse;
+  @media (min-width: 768px) {
+    max-width: 500px;
+    margin: 20px auto;
   }
-}
 
-#footer-container {
-  height: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: floralwhite;
-
-  img {
-    max-width: 32px;
+  @media (min-width: 992px) {
+    max-width: 700px;
+    margin: 20px auto;
   }
 }
